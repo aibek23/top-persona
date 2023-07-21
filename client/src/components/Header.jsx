@@ -122,7 +122,7 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
                to="/courses"
                     cclassName="menu-item"
                   >
-                  КУРСЫ НЕМЕЦКОГР
+                  КУРСЫ НЕМЕЦКОГО
                   </Link>
               {/* <Link  className="menu-item" to="/vacancies">
                 ВАКАНСИИ
@@ -180,7 +180,7 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
                to="/courses"
                     className="headerli u-active-custom-color u-nav-link"
                   >
-                  Курсы Немецкого
+                  КУРСЫ НЕМЕЦКОГО
                   </NavLink>
                   </li>
                 
