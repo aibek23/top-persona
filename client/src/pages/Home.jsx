@@ -22,13 +22,12 @@ import { GrMail } from "react-icons/gr";
 import "../App.css";
 import Form from "../components/Form";
 
-const Home = ({ refs }) => {
+const Home = () => {
   return (
     <>
       <section
         className="u-align-center u-clearfix u-grey-15 u-section-1"
         id="carousel_5288"
-        ref={refs.TopClick}
       >
         <img
           className="u-expanded-width u-image u-image-1"
@@ -385,7 +384,7 @@ const Home = ({ refs }) => {
               </div>
             </div>
           </div>
-          <div ref={refs.aboutRef} id="about"></div>
+          <div  id="about"></div>
         </div>
       </div>
 
@@ -730,7 +729,7 @@ const Home = ({ refs }) => {
         <div
           id="contact"
           className="u-clearfix u-sheet u-sheet-1"
-          ref={refs.contactRef}
+
         >
           <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1 ">
             <div

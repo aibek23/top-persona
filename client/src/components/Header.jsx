@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import {  NavLink, Link, useLocation  } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import Logo from "../img/1612490879443.jpeg";
 import { slide as Menu } from "react-burger-menu";
 
-const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
+const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -43,8 +43,6 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-
 
   const handleMenuOpen = (state) => {
     setIsMenuOpen(state.isOpen);
@@ -93,37 +91,28 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
               <Link
                 // id="about"
                 className="menu-item"
-                to="/"
-                onClick={onAboutClick}
+                to="/#about"
+                // onClick={onAboutClick}
               >
                 О НАС
               </Link>
               <Link
-  
                 className="menu-item"
-                // to="/#contact"
-                onClick={onContactClick}
+                to="/#contact"
+                // onClick={onContactClick}
               >
                 КОНТАКТЫ
               </Link>
-              {/* <Link
-  
-                className="menu-item"
-                to="/reviews"
-                // onClick={onContactClick}
-              >
-                  ОТЗЫВЫ
-              </Link> */}
-            
-              <Link  className="menu-item" to="/prices">
+              <Link className="menu-item" to="/reviews">
+                ОТЗЫВЫ
+              </Link>
+
+              <Link className="menu-item" to="/prices">
                 ЦЕНЫ
               </Link>
-              <Link
-               to="/courses"
-                    cclassName="menu-item"
-                  >
-                  КУРСЫ НЕМЕЦКОГО
-                  </Link>
+              <Link to="/courses" cclassName="menu-item">
+                КУРСЫ НЕМЕЦКОГО
+              </Link>
               {/* <Link  className="menu-item" to="/vacancies">
                 ВАКАНСИИ
               </Link> */}
@@ -169,6 +158,14 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
                 </li>
                 <li className="u-nav-item">
                   <NavLink
+                    to="/reviews"
+                    className="headerli u-active-custom-color u-nav-link"
+                  >
+                    ОТЗЫВЫ
+                  </NavLink>
+                </li>
+                <li className="u-nav-item">
+                  <NavLink
                     to="/prices"
                     className="headerli u-active-custom-color u-nav-link"
                   >
@@ -176,14 +173,14 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
                   </NavLink>
                 </li>
                 <li className="u-nav-item">
-                <NavLink
-               to="/courses"
+                  <NavLink
+                    to="/courses"
                     className="headerli u-active-custom-color u-nav-link"
                   >
-                  КУРСЫ НЕМЕЦКОГО
+                    КУРСЫ НЕМЕЦКОГО
                   </NavLink>
-                  </li>
-                
+                </li>
+
                 {/* <li className="u-nav-item">
                   <NavLink
                     to="/vacancies"
@@ -202,7 +199,7 @@ const Header = ({ onContactClick, onAboutClick, onTopClick }) => {
             data-image-height={144}
           >
             <img
-            style={{"borderRadius":"10%"}}
+              style={{ borderRadius: "10%" }}
               src={Logo}
               className="u-logo-image u-logo-image-1"
               alt="Logo"

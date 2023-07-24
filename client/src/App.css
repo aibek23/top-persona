@@ -1,4 +1,33 @@
-.active{
+html, body {
+  scroll-behavior: 0;
+}
+
+
+
+
+
+
+
+/* Add custom styles for carousel indicators */
+.carousel-indicators {
+  bottom: 2px; /* Adjust the distance from the bottom as needed */
+}
+
+.carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5)!important; /* Customize the indicator color */
+  border: 2px solid rgba(0, 0, 0, 0.7)!important; ; /* Customize the indicator border color */
+  width: 16px; /* Adjust the width of the indicators */
+  height: 16px; /* Adjust the height of the indicators */
+  margin: 0 4px; /* Adjust the margin between indicators as needed */
+ /* Make the indicators circular */
+}
+
+.carousel-indicators button .active {
+  background-color: black!important; ; /* Customize the active indicator color */
+  border-color: black; /* Customize the active indicator border color */
+}
+
+.u-nav-item .active{
   padding: 10px 20px;
    background-color: #d78059;
    border-radius: 10px;
@@ -301,6 +330,9 @@ background: #D9D9D9;
   .footerIcons{
     font-size:40px
   }
+  .rating-star{
+    font-size: 26px;
+  }
 }
 @media (max-width: 992px){
   .footerCopyright{
@@ -309,6 +341,10 @@ background: #D9D9D9;
   .footerIcons{
     font-size:35px!important;
   }
+  .rating-star{
+    margin-left: 15px;
+    font-size: 23px;
+  }
 }
 @media (max-width: 576px){
   .footerCopyright{
@@ -316,6 +352,9 @@ background: #D9D9D9;
   }
   .footerIcons{
     font-size:30px!important;
+  }
+  .rating-star{
+    font-size: 20px;
   }
   
 }
