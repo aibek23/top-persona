@@ -14,6 +14,7 @@ import img10 from "../img/507bfe31d93ac068001f2064e6d8bd14-min.jpg";
 import img11 from "../img/1674649320_top-fon-com-p-nemetskii-fon-dlya-prezentatsii-101.jpg";
 import img12 from "../img/0920afe67d667cb16763556276586015.jpg";
 import img13 from "../img/FRebMCiWYAAbFK2.jpg";
+import img14 from "../img/KyrgyzstanFlag_338314.jpg";
 
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
@@ -72,22 +73,16 @@ const Home = () => {
       >
         <div className="u-clearfix u-sheet u-sheet-1 container">
           <h2
-            className="u-text u-text-default u-text-1"
-            data-animation-name="customAnimationIn"
-            data-animation-duration={1750}
-            data-animation-delay={500}
+            className=" u-text-1 "
+            style={{textAlign:"center"}}
           >
-            {" "}
-            Успешное трудоустройство в лучших странах мира
+            почему выбирают нас ?
           </h2>
           <p
             className="u-text u-text-2"
             data-animation-name="customAnimationIn"
-            data-animation-duration={1500}
-            data-animation-delay={500}
           >
-            {" "}
-            Присоединяйтесь к TOP-Persona уже сегодня и откройте новые горизонты для вашей карьеры! Наша команда всегда готова помочь вам достичь успеха и реализовать ваш потенциал в мировом рынке труда.
+            
           </p>
           <div className="u-expanded-width u-list u-list-1">
             <div className="u-repeater u-repeater-1">
@@ -241,7 +236,7 @@ const Home = () => {
                     data-animation-name="customAnimationIn"
 
                   >
-                     Персонализированный подход
+                     КОМАНДА ПРОФЕССИОНАЛОВ
                   </h3>
                   <p
                     className="u-text u-text-8"
@@ -249,6 +244,7 @@ const Home = () => {
 
                   >
                     Мы ценим уникальность каждого кандидата и предоставляем индивидуальное сопровождение на всем пути к вашей успешной карьере за границей.
+
                   </p>
                 </div>
               </div>
@@ -302,7 +298,7 @@ const Home = () => {
                     data-animation-duration={1250}
                     data-animation-delay={500}
                   >
-                    консультация
+                    КОМПЛЕКСНАЯ ПОМОЩЬ НА ВСЕХ ЭТАПАХ
                   </h3>
                   <p
                     className="u-text u-text-10"
@@ -310,8 +306,7 @@ const Home = () => {
                     data-animation-duration={1500}
                     data-animation-delay={500}
                   >
-                    Наши эксперты готовы ответить на все ваши вопросы и помочь справиться с любыми сложностями, связанными с трудоустройством в Европе.
-                  </p>
+ Наша цель - облегчить весь процесс трудоустройства и сделать его максимально эффективным для вас.                  </p>
                 </div>
               </div>
             </div>
@@ -697,6 +692,17 @@ const Home = () => {
                 </div>
               </div>
               <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
+                  <img
+                    alt=""
+                    className="u-expanded-width u-image u-image-contain u-image-default u-image-4"
+                    data-image-width={300}
+                    data-image-height={90}
+                    src={img14}
+                  />
+                </div>
+              </div>
+              <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                 <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-4">
                   <img
                     alt=""
@@ -754,87 +760,7 @@ const Home = () => {
                     </h4>
                     <div className="u-expanded-width u-form u-form-1">
                       <Form />
-                      {/* <form
-                        action="https://forms.nicepagesrv.com/v2/form/process"
-                        className="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
-                        source="email"
-                        name="form"
-                        style={{ padding: 10 }}
-                      >
-                        <div className="u-form-group u-form-name u-label-none">
-                          <label htmlFor="name-2ee9" className="u-label">
-                            Name
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Enter your Name"
-                            id="name-2ee9"
-                            name="name"
-                            className="u-grey-5 u-input u-input-rectangle"
-                            required=""
-                          />
-                        </div>
-                        <div className="u-form-email u-form-group u-label-none">
-                          <label htmlFor="email-2ee9" className="u-label">
-                            Email
-                          </label>
-                          <input
-                            type="email"
-                            placeholder="Enter a valid email address"
-                            id="email-2ee9"
-                            name="email"
-                            className="u-grey-5 u-input u-input-rectangle"
-                            required=""
-                          />
-                        </div>
-                        <div className="u-form-group u-form-message u-label-none">
-                          <label htmlFor="message-2ee9" className="u-label">
-                            Message
-                          </label>
-                          <textarea
-                            placeholder="Enter your message"
-                            rows={4}
-                            cols={50}
-                            id="message-2ee9"
-                            name="message"
-                            className="u-grey-5 u-input u-input-rectangle"
-                            required=""
-                            defaultValue={""}
-                          />
-                        </div>
-                        <div className="u-align-left u-form-group u-form-submit u-label-none">
-                          <a
-                            href="#"
-                            className="u-btn u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1"
-                          >
-                            Submit
-                          </a>
-                          <input
-                            type="submit"
-                            defaultValue="submit"
-                            className="u-form-control-hidden"
-                          />
-                        </div>
-                        <div className="u-form-send-message u-form-send-success">
-                          {" "}
-                          Thank you! Your message has been sent.{" "}
-                        </div>
-                        <div className="u-form-send-error u-form-send-message">
-                          {" "}
-                          Unable to send your message. Please fix errors then
-                          try again.{" "}
-                        </div>
-                        <input
-                          type="hidden"
-                          defaultValue=""
-                          name="recaptchaResponse"
-                        />
-                        <input
-                          type="hidden"
-                          name="formServices"
-                          defaultValue="43c8512c82402ac24c6ae579d69f58c7"
-                        />
-                      </form> */}
+                      
                     </div>
                   </div>
                 </div>
@@ -861,7 +787,7 @@ const Home = () => {
                                   </p>
                                 </div>
                                 <p>
-                                  ​Насирдина Исанова, 79 ​6 этаж, 607 офис -{" "}
+                                  ​Насирдина Исанова 79, офис - 607 (​6 этаж) {" "}
                                   <a
                                     className="dg-widget-link"
                                     style={{ color: "#478AC9" }}
@@ -926,13 +852,28 @@ const Home = () => {
                                   </p>
                                 </div>
                                 <p>
-                                  Телефон для справок:{" "}
+                                  Телефон для справок:
+                                  <div className="d-flex" style={{"flexDirection": "column"}}>
                                   <a
                                     href="tel:+996556305310"
                                     style={{ color: "#478AC9" }}
                                   >
                                     +996 556 30 53 10
                                   </a>
+                                  <a
+                                    href="tel:+996556305310"
+                                    style={{ color: "#478AC9" }}
+                                  >
+                                    +996 556 30 53 10
+                                  </a>
+                                  <a
+                                    href="tel:+996556305310"
+                                    style={{ color: "#478AC9" }}
+                                  >
+                                    +996 556 30 53 10
+                                  </a>
+                                  </div>
+                                  
                                 </p>
                               </div>
                             </div>

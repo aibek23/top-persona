@@ -2212,7 +2212,7 @@ body{
 }
 
 .u-section-8 .u-repeater-1 {
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(5, 20%);
   min-height: 156px;
   grid-gap: 0px;
 }
@@ -22072,14 +22072,7 @@ a.pswp__share--download:hover {
   height: 44px;
   width: 100%;
 }
-.pswp__caption,
-.pswp__top-bar,
-.pswp--has_mouse .pswp__button--arrow--left,
-.pswp--has_mouse .pswp__button--arrow--right {
-  -webkit-backface-visibility: hidden;
-  will-change: opacity;
-  transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
-}
+
 /* pswp--has_mouse class is added only when two subsequent mousemove events occur */
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
