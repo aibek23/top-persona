@@ -132,7 +132,7 @@ body{
 
   .u-section-1 .u-image-1 {
     height: 390px;
-    object-position: 0% 50%;
+    object-position: 50% 50%;
   }
 
   .u-section-1 .u-group-1 {
@@ -20121,7 +20121,7 @@ div.u-video,
   color: inherit;
 }
 .u-nav-container > .u-nav > .u-nav-item > .u-nav-link {
-  padding: 10px 20px;
+  padding: 5px 6px;
 }
 .menu-collapse {
   display: none;

@@ -851,7 +851,7 @@ const Home = () => {
                                     />
                                   </p>
                                 </div>
-                                <p>
+                                <div>
                                   Телефон для справок:
                                   <div className="d-flex" style={{"flexDirection": "column"}}>
                                   <a
@@ -861,20 +861,20 @@ const Home = () => {
                                     +996 556 30 53 10
                                   </a>
                                   <a
-                                    href="tel:+996556305310"
+                                    href="tel:+996312888007"
                                     style={{ color: "#478AC9" }}
                                   >
-                                    +996 556 30 53 10
+                                    +996 312 888 007
                                   </a>
                                   <a
-                                    href="tel:+996556305310"
+                                    href="tel:+996700630174"
                                     style={{ color: "#478AC9" }}
                                   >
-                                    +996 556 30 53 10
+                                    +996 700 630 174
                                   </a>
                                   </div>
                                   
-                                </p>
+                                </div>
                               </div>
                             </div>
                           </div>

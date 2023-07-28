@@ -1,12 +1,9 @@
 html, body {
   scroll-behavior: 0;
 }
-
-
-
-
-
-
+.highlight{
+  background-color: yellow;
+}
 
 /* Add custom styles for carousel indicators */
 .carousel-indicators {
@@ -67,6 +64,20 @@ header.show {
 
 header.bm-open {
   transform: translateY(0%) !important;
+}
+
+.watermark:hover {
+  /* content: "";
+  position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  
+  /* background-image: url('путь_к_картинке_водяного_знака'); */
+  background-color: #e30c0c;
+  opacity: 0.5; /* Устанавливает прозрачность водяного знака */
+  /* pointer-events: none; */
 }
  /* Position and sizing of burger button */
 @media (min-width: 992px) {

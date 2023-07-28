@@ -1,34 +1,34 @@
-import React, { useEffect } from "react";
-import { useLocation , Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Vacancies from "./pages/Vacancies";
-import Footer from "./components/Footer";
-import AdminPage from "./pages/AdminPage";
-import Prices from "./pages/Prices";
-import Courses from "./pages/Courses";
-import Reviews from "./pages/Reviews";
-function App() {
-  // const { pathname } = useLocation();
+import React from 'react'
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [pathname]);
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {useRoutes} from './routes'
+import {useAuth} from './hooks/auth.hook'
+import {Context} from './context/Context'
+import {Loader} from './components/Loader'
+
+function App() {
+  const { token, login, logout, userId, ready, userEmail } = useAuth();
+  const isAuthenticated = !token;
+  const routes = useRoutes(isAuthenticated);
+
+  if (!ready) {
+    return <Loader />;
+  }
 
   return (
-    <>
-      <Header/>
-      <Routes>
-        <Route path="/admin" element={<AdminPage />} />
-        <Route index element={<Home />} />
-        <Route path="/reviews" element={<Reviews/>}/>
-        <Route path="/vacancies" element={<Vacancies />} />
-        <Route path="/prices" element={<Prices />} />
-        <Route path="/courses" element={<Courses />} />
-      </Routes>
-      <Footer />
-    </>
+    <Context.Provider
+      value={{
+        token,
+        login,
+        logout,
+        userId,
+        isAuthenticated,
+        userEmail,
+      }}
+    >
+     {routes} 
+    </Context.Provider>
   );
 }
 
-export default App;
+export default App; 

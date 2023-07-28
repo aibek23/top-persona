@@ -1,0 +1,92 @@
+.authContainer{
+  position: absolute;
+  z-index: 7777;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+
+.nav_link{
+  color: rgba(0,0,0,.55);
+  text-decoration: none;
+}
+
+.nav_link.active{
+  color: rgba(0,0,0,.9);
+}
+a:hover,a:focus{
+ outline: none;
+ text-decoration: none;
+}
+.tab .nav_tabs{
+ border-bottom: none;
+ padding: 0 20px;
+ position: relative;
+}
+.tab .nav_tabs li{ margin: 0 30px 0 0; }
+.tab .nav_tabs li button{
+ font-size: 18px;
+ color: rgb(105, 105, 105);
+ border-radius: 0;
+ text-transform: uppercase;
+ background: transparent;
+ padding: 0;
+ margin-right: 0;
+ border: none;
+ border-bottom: 2px solid transparent;
+ opacity: 0.5;
+ position: relative;
+ transition: all 0.5s ease 0s;
+}
+.tab .nav_tabs li button:hover{ background: transparent; }
+.tab .nav_tabs li.active button,
+.tab .nav_tabs li.active button:focus,
+.tab .nav_tabs li.active button:hover{
+ border: none;
+ background: transparent;
+ opacity: 1;
+ border-bottom: 2px solid #eec111;
+ color: rgb(50, 45, 0);
+}
+ 
+.form_horizontal .main_checkbox{
+  width: 20px;
+  height: 20px;
+  background: #eec111;
+  float: left;
+  margin: 5px 0 0 20px;
+  border: 1px solid #eec111;
+  position: relative;
+ }
+ .form_horizontal .main_checkbox label{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+ }
+ .form_horizontal .main_checkbox label:after{
+  content: " ";
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+ }
+
+
+
+.form_horizontal .forgot_pass .btn:hover{ color: #eec111; }
+@media only screen and (max-width: 479px){
+ .tab{ padding: 40px 20px; }
+}
