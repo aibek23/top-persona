@@ -25,18 +25,15 @@ const AdminHeader = () => {
         style={{ height: "45px" }}
       >
         <Container>
-          <Navbar.Brand href="/admin">Admin Panel</Navbar.Brand>
+          <Navbar.Brand href="#settings "  onClick={(e) => logoutHandler(e)}>   выйти из админ-панели</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             id="basic-navbar-nav"
             className="justify-content-end"
           >
             <Nav className="mr-auto">
-            <Nav.Link href="#settings " onClick={(e) => logoutHandler(e)}>
-              выйти из админ-панели
-              </Nav.Link>
               <NavLink to="/" className="nav-link">
-              вернуться на сайт
+              Перейти на сайт
               </NavLink>
               <NavLink exact="true" to="/admin" className="nav-link">
                 главная

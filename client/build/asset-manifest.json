@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eddbd986.css",
-    "main.js": "/static/js/main.0a851be7.js",
+    "main.css": "/static/css/main.d76533e7.css",
+    "main.js": "/static/js/main.fedc34a9.js",
     "static/media/EMQRkkgdCHM.jpg": "/static/media/EMQRkkgdCHM.de5b236d5d7f64341e65.jpg",
     "static/media/loading.gif": "/static/media/loading.92af15917dc30c7b0a04.gif",
     "static/media/cvxcx-min.jpg": "/static/media/cvxcx-min.2402cd5b623e4e2e32ee.jpg",
@@ -18,11 +18,12 @@
     "static/media/10763e66-8840-46ef-9114-0df70bb391fa.jpg": "/static/media/10763e66-8840-46ef-9114-0df70bb391fa.6ce8a22a93017f327b98.jpg",
     "static/media/handshake-close-up-executives_1098-1384.jpg": "/static/media/handshake-close-up-executives_1098-1384.dfb2b10dbdf0ccd52be0.jpg",
     "index.html": "/index.html",
-    "main.eddbd986.css.map": "/static/css/main.eddbd986.css.map",
-    "main.0a851be7.js.map": "/static/js/main.0a851be7.js.map"
+    "static/media/icon-check.svg": "/static/media/icon-check.2a82d3ac834a0d077676.svg",
+    "main.d76533e7.css.map": "/static/css/main.d76533e7.css.map",
+    "main.fedc34a9.js.map": "/static/js/main.fedc34a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.eddbd986.css",
-    "static/js/main.0a851be7.js"
+    "static/css/main.d76533e7.css",
+    "static/js/main.fedc34a9.js"
   ]
 }

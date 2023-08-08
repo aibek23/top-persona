@@ -7,7 +7,7 @@ import {Context} from './context/Context'
 import {Loader} from './components/Loader'
 
 function App() {
-  const { token, login, logout, userId, ready, userEmail } = useAuth();
+  const { token, login, logout, userId, ready, isFirstVisit  } = useAuth();
   const isAuthenticated = !token;
   const routes = useRoutes(isAuthenticated);
 
@@ -23,7 +23,7 @@ function App() {
         logout,
         userId,
         isAuthenticated,
-        userEmail,
+        isFirstVisit 
       }}
     >
      {routes} 

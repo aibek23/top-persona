@@ -72,6 +72,7 @@ router.post('/save', auth, async (req, res) => {
 
 // /api/vacancies/delete 
 router.post('/delete', auth, asyncHandler(async (req, res) => {
+  console.log(req.body._id);
   const _id = req.body._id.toString();
   if (!_id || typeof _id !== 'string') {
     return res.status(400).json({ message: 'Invalid _id' });

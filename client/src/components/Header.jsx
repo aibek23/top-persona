@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import Logo from "../img/1612490879443.jpeg";
 import { slide as Menu } from "react-burger-menu";
-import {AiFillSetting} from "react-icons/ai"
+import { AiFillSetting } from "react-icons/ai"
 
 const Header = (data) => {
 
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
-  const [root , setRoot] = useState("")
+  const [root, setRoot] = useState("")
 
   useEffect(() => {
     if (location.hash) {
@@ -23,10 +23,10 @@ const Header = (data) => {
     }
     if (location.pathname.includes("/admin")) {
       setRoot("none")
-    }else{
+    } else {
       setRoot("")
     }
-    
+
   }, [location]);
 
   useEffect(() => {
@@ -61,11 +61,10 @@ const Header = (data) => {
   window.addEventListener("scroll", handleScroll);
 
   return (
-    <div className="header_section" style={{"display":root}}>
+    <div className="header_section" style={{ "display": root }}>
       <header
-        className={`u-clearfix u-header u-palette-1-base show fixed ${
-          (isHeaderFixed ? "fixed" : "", isMenuOpen ? "bm-open" : "")
-        }`}
+        className={`u-clearfix u-header u-palette-1-base show fixed ${(isHeaderFixed ? "fixed" : "", isMenuOpen ? "bm-open" : "")
+          }`}
         id="sec-9c40"
       >
         <div className="container-lg">
@@ -93,16 +92,19 @@ const Header = (data) => {
                 // id="about"
                 className="menu-item"
                 to="/#about"
-                // onClick={onAboutClick}
+              // onClick={onAboutClick}
               >
                 О НАС
               </Link>
               <Link
                 className="menu-item"
                 to="/#contact"
-                // onClick={onContactClick}
+              // onClick={onContactClick}
               >
                 КОНТАКТЫ
+              </Link>
+              <Link className="menu-item" to="/vacancies">
+                вакансии
               </Link>
               <Link className="menu-item" to="/reviews">
                 ОТЗЫВЫ
@@ -114,9 +116,14 @@ const Header = (data) => {
               <Link to="/courses" className="menu-item">
                 КУРСЫ НЕМЕЦКОГО
               </Link>
-              <Link  className="adminbtn" to="/admin">
-                <AiFillSetting/>
-              </Link>
+
+              {data.authdata ?
+       
+                    <Link className="adminbtn d-flex align-itmes-center" to="/admin">
+                      <AiFillSetting  />
+                    </Link>
+                : ""}
+              
             </Menu>
           </div>
           <nav className="u-menu-one-level u-offcanvas u-menu-1 nav_bar">
@@ -124,13 +131,12 @@ const Header = (data) => {
               <ul className="u-nav u-spacing-2 u-unstyled u-nav-1">
                 <li className="u-nav-item">
                   <Link
-                    className={`headerli u-active-custom-color u-nav-link ${
-                      location.hash === "" && location.pathname === "/"
+                    className={`headerli u-active-custom-color u-nav-link ${location.hash === "" && location.pathname === "/"
                         ? "active"
                         : ""
-                    }`}
+                      }`}
                     to="/"
-                    // onClick={onTopClick}
+                  // onClick={onTopClick}
                   >
                     ГЛАВНАЯ
                   </Link>
@@ -138,10 +144,9 @@ const Header = (data) => {
                 <li className="u-nav-item">
                   <Link
                     to="/#about"
-                    className={`headerli u-active-custom-color u-nav-link ${
-                      location.hash === "#about" ? "active" : ""
-                    }`}
-                    // onClick={onAboutClick}
+                    className={`headerli u-active-custom-color u-nav-link ${location.hash === "#about" ? "active" : ""
+                      }`}
+                  // onClick={onAboutClick}
                   >
                     О НАС
                   </Link>
@@ -149,13 +154,20 @@ const Header = (data) => {
                 <li className="u-nav-item">
                   <Link
                     to="/#contact"
-                    className={`headerli u-active-custom-color u-nav-link ${
-                      location.hash === "#contact" ? "active" : ""
-                    }`}
-                    // onClick={onContactClick}
+                    className={`headerli u-active-custom-color u-nav-link ${location.hash === "#contact" ? "active" : ""
+                      }`}
+                  // onClick={onContactClick}
                   >
                     КОНТАКТЫ
                   </Link>
+                </li>
+                <li className="u-nav-item">
+                  <NavLink
+                    to="/vacancies"
+                    className="headerli u-active-custom-color u-nav-link"
+                  >
+                    вакансии
+                  </NavLink>
                 </li>
                 <li className="u-nav-item">
                   <NavLink
@@ -181,12 +193,12 @@ const Header = (data) => {
                     КУРСЫ НЕМЕЦКОГО
                   </NavLink>
                 </li>
-                    {data.authdata?
-                <li className="u-nav-item ">
-                <Link  className="adminbtn d-flex align-itmes-center" to="/admin">
-                <AiFillSetting size={25}/>
-              </Link>
-                </li>:""}
+                {data.authdata ?
+                  <li className="u-nav-item ">
+                    <Link className="adminbtn d-flex align-itmes-center" to="/admin">
+                      <AiFillSetting size={25} />
+                    </Link>
+                  </li> : ""}
               </ul>
             </div>
           </nav>

@@ -1,6 +1,6 @@
 import React from "react";
 import { YMaps, Map, Placemark, ZoomControl } from "@pbe/react-yandex-maps";
-import { Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img1 from "../images/cvxcx-min.jpg";
 import img2 from "../images/vbbv-min.jpg";
 import img3 from "../images/1828743-348625e0.png";
@@ -14,11 +14,13 @@ import img10 from "../img/507bfe31d93ac068001f2064e6d8bd14-min.jpg";
 import img11 from "../img/1674649320_top-fon-com-p-nemetskii-fon-dlya-prezentatsii-101.jpg";
 import img12 from "../img/0920afe67d667cb16763556276586015.jpg";
 import img13 from "../img/FRebMCiWYAAbFK2.jpg";
-import img14 from "../img/KyrgyzstanFlag_338314.jpg";
+import img14 from "../img/fa01d365afb91ca880db18bcecd600b3.png";
 
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
+
+import {AiOutlinePlusCircle} from "react-icons/ai"
 // import video1 from "../video/video1.mp4";
 import "../App.css";
 import Form from "../components/Form";
@@ -67,22 +69,85 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
       <section
         className="u-align-center u-clearfix u-grey-15 u-section-2 "
         id="carousel_2295"
       >
+        <div className="container">
+          <h2
+            className="  "
+            style={{ textAlign: "center" }}
+          >
+            Мы трудоустраиваем в следующих странах:
+          </h2>
+          <div className="u-expanded-width-lg u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-list ">
+            <div className="u-repeater u-repeater-1">
+              <Link to="/vacancies?jobs+in+germany" style={{textDecoration:"none"}}>
+              <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
+                  <p  style={{ "fontWeight": "bold", textAlign: "center", fontSize: "1.5rem", margin: "0 0" , color:"black"  }} >  Германия</p>
+                  <img
+                    alt=""
+                    className="u-expanded-width u-image u-image-contain u-image-default u-image-4"
+                    src={img11}
+                  />
+                </div>
+              </div>
+              </Link>
+              <Link to="/vacancies?jobs+in+poland" style={{textDecoration:"none"}}>
+              <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
+                  <p  style={{ "fontWeight": "bold", textAlign: "center", fontSize: "1.5rem", margin: "0 0" , color:"black"  }} >  Польша</p>
+                  <img
+                    alt=""
+                    className="u-expanded-width u-image u-image-contain u-image-default u-image-4"
+                    src={img14}
+                  />
+                </div>
+              </div>
+              </Link>
+
+              <Link to="/vacancies?jobs+in+lithuania" style={{textDecoration:"none"}}>
+              <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
+                  <p  style={{ "fontWeight": "bold", textAlign: "center", fontSize: "1.5rem", margin: "0 0" , color:"black"  }} > Литва </p>
+                  <img
+                    alt=""
+                    className="u-expanded-width u-image u-image-contain u-image-default u-image-4"
+                    src={img12}
+                  />
+                </div>
+              </div>
+              </Link>
+              <Link to="/vacancies?jobs+in+latvia" style={{textDecoration:"none"}}>
+              <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+                <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-3">
+                  <p  style={{ "fontWeight": "bold", textAlign: "center", fontSize: "1.5rem", margin: "0 0" , color:"black"  }} > Латвия</p>
+                  <img
+                    alt=""
+                    className="u-expanded-width u-image u-image-contain u-image-default u-image-4"
+                    src={img13}
+                  />
+                </div>
+              </div>
+              </Link>
+                          </div>
+          </div>
+
+        </div>
         <div className="u-clearfix u-sheet u-sheet-1 container">
           <h2
             className=" u-text-1 "
-            style={{textAlign:"center"}}
+            style={{ textAlign: "center" }}
           >
-            почему выбирают нас ?
+            почему мы лучшие:
           </h2>
           <p
             className="u-text u-text-2"
             data-animation-name="customAnimationIn"
           >
-            
+
           </p>
           <div className="u-expanded-width u-list u-list-1">
             <div className="u-repeater u-repeater-1">
@@ -208,7 +273,7 @@ const Home = () => {
                   <span
                     className="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-icon u-icon-circle u-opacity u-opacity-70 u-palette-1-light-3 u-text-palette-1-base u-icon-3"
                     data-animation-name="customAnimationIn"
-    
+
                   >
                     <svg
                       className="u-svg-link"
@@ -236,7 +301,7 @@ const Home = () => {
                     data-animation-name="customAnimationIn"
 
                   >
-                     КОМАНДА ПРОФЕССИОНАЛОВ
+                    КОМАНДА ПРОФЕССИОНАЛОВ
                   </h3>
                   <p
                     className="u-text u-text-8"
@@ -306,12 +371,13 @@ const Home = () => {
                     data-animation-duration={1500}
                     data-animation-delay={500}
                   >
- Наша цель - облегчить весь процесс трудоустройства и сделать его максимально эффективным для вас.                  </p>
+                    Наша цель - облегчить весь процесс трудоустройства и сделать его максимально эффективным для вас.                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
       <div className="u-grey-15 u-section-3 " id="carousel_d29c">
         <div className="u-clearfix u-sheet u-valign-middle-lg u-sheet-1 container">
@@ -379,7 +445,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div  id="about"></div>
+          <div id="about"></div>
         </div>
       </div>
 
@@ -496,7 +562,7 @@ const Home = () => {
             TOP-Persona: надежный партнер в поиске работы
           </h2>
           <p className="u-text u-text-2">
-          Наши услуги охватывают всю процедуру трудоустройства, включая помощь с составлением резюме, подготовкой к собеседованию, оформлением всех необходимых документов и многое другое. Мы стремимся сделать процесс трудоустройства простым и эффективным для каждого нашего клиента.
+            Наши услуги охватывают всю процедуру трудоустройства, включая помощь с составлением резюме, подготовкой к собеседованию, оформлением всех необходимых документов и многое другое. Мы стремимся сделать процесс трудоустройства простым и эффективным для каждого нашего клиента.
           </p>
           <div className="u-expanded-width u-list u-list-1">
             <div className="u-repeater u-repeater-1">
@@ -667,7 +733,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="u-expanded-width-lg u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-list u-list-1">
+          {/* <div className="u-expanded-width-lg u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-list u-list-1">
             <div className="u-repeater u-repeater-1">
               <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle">
                 <div className="u-container-layout u-similar-container u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-2">
@@ -725,7 +791,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section
@@ -760,7 +826,7 @@ const Home = () => {
                     </h4>
                     <div className="u-expanded-width u-form u-form-1">
                       <Form />
-                      
+
                     </div>
                   </div>
                 </div>
@@ -787,7 +853,7 @@ const Home = () => {
                                   </p>
                                 </div>
                                 <p>
-                                  ​Насирдина Исанова 79, офис - 607 (​6 этаж) {" "}
+                                  Насирдина Исанова 79, офис - 607 (​6 этаж) {" "}
                                   <a
                                     className="dg-widget-link"
                                     style={{ color: "#478AC9" }}
@@ -811,13 +877,13 @@ const Home = () => {
                                 </div>
                                 <p>
                                   Режим работы офиса: Понедельник - Пятница
-                                  8:30-17:30 Обед: 12:00-13:00 Выходные:
+                                  8:30-17:00 Обед: 12:00-13:00 Выходные:
                                   Суббота, Воскресенье
                                 </p>
                               </div>
                               <div className="d-flex ">
                                 <div className="d-flex align-items-center">
-                          
+
                                   <p>
                                     <GrMail
                                       style={{
@@ -827,8 +893,8 @@ const Home = () => {
                                       }}
                                     />
                                   </p>
-                                  </div>
-                          
+                                </div>
+
                                 <p>
                                   <a
                                     href="mailto:info@globus-tour.kg"
@@ -837,7 +903,7 @@ const Home = () => {
                                     info@globus-tour.kg
                                   </a>
                                 </p>
-                              
+
                               </div>
                               <div className="d-flex ">
                                 <div className="d-flex align-items-center">
@@ -853,27 +919,27 @@ const Home = () => {
                                 </div>
                                 <div>
                                   Телефон для справок:
-                                  <div className="d-flex" style={{"flexDirection": "column"}}>
-                                  <a
-                                    href="tel:+996556305310"
-                                    style={{ color: "#478AC9" }}
-                                  >
-                                    +996 556 30 53 10
-                                  </a>
-                                  <a
-                                    href="tel:+996312888007"
-                                    style={{ color: "#478AC9" }}
-                                  >
-                                    +996 312 888 007
-                                  </a>
-                                  <a
-                                    href="tel:+996700630174"
-                                    style={{ color: "#478AC9" }}
-                                  >
-                                    +996 700 630 174
-                                  </a>
+                                  <div className="d-flex" style={{ "flexDirection": "column" }}>
+                                    <a
+                                      href="tel:+996556305310"
+                                      style={{ color: "#478AC9" }}
+                                    >
+                                      +996 556 30 53 10
+                                    </a>
+                                    <a
+                                      href="tel:+996312888007"
+                                      style={{ color: "#478AC9" }}
+                                    >
+                                      +996 312 888 007
+                                    </a>
+                                    <a
+                                      href="tel:+996700630174"
+                                      style={{ color: "#478AC9" }}
+                                    >
+                                      +996 700 630 174
+                                    </a>
                                   </div>
-                                  
+
                                 </div>
                               </div>
                             </div>
