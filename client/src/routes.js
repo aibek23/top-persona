@@ -13,7 +13,7 @@ import AddVacancies from "./pages/Admin/vacancies/AddVacancies";
 import VacanciesCart from "./pages/Admin/vacancies/VacanciesCart";
 import AddReviews from "./pages/Admin/reviews/AddReviews";
 import VacanciesPage from "./pages/VacanciesPage";
-import CheckUser from "./CheckUser";
+import CheckUser from "./pages/CheckUser/CheckUser";
 
 export const useRoutes = (isAuthenticated) => {
   if (!isAuthenticated) {
@@ -27,7 +27,7 @@ export const useRoutes = (isAuthenticated) => {
          <Route path='/vacancies/:id' element={<VacanciesPage/>} />
         <Route index element={<Home />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/vacancies" element={<Vacancies />} />
+        <Route path="/vacancies" element={<CheckUser />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/courses" element={<Courses />} />
       </Routes>
@@ -45,7 +45,7 @@ export const useRoutes = (isAuthenticated) => {
         <Route index element={<Home />} />
         <Route path='/vacancies/:id' element={<VacanciesPage/>} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/vacancies" element={<Vacancies />} />
+        <Route path="/vacancies" element={<CheckUser />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/courses" element={<Courses />} />
 

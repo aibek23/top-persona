@@ -103,8 +103,8 @@ const Header = (data) => {
               >
                 КОНТАКТЫ
               </Link>
-              <Link className="menu-item" to="/vacancies">
-                вакансии
+              <Link className="menu-item" to="/vacancies?all">
+                ВАКАНСИИ
               </Link>
               <Link className="menu-item" to="/reviews">
                 ОТЗЫВЫ
@@ -163,10 +163,10 @@ const Header = (data) => {
                 </li>
                 <li className="u-nav-item">
                   <NavLink
-                    to="/vacancies"
+                    to="/vacancies?all"
                     className="headerli u-active-custom-color u-nav-link"
                   >
-                    вакансии
+                     ВАКАНСИИ
                   </NavLink>
                 </li>
                 <li className="u-nav-item">

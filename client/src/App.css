@@ -367,5 +367,91 @@ background: #D9D9D9;
   .rating-star{
     font-size: 20px;
   }
-  
 }
+
+/* Общие стили слайдера */
+.slider-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Стили для кнопок "Вперед" и "Назад" */
+.slider-control {
+  background-color: #f0f0f004;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+
+  position: relative;
+  border-radius: 100%;
+}
+
+.slider-control:hover {
+  background-color: #d0d0d0;
+}
+
+
+.slider-control.next {
+
+  opacity: 0.7; /* Прозрачность по вашему желанию */
+  background-color: #007bff00; /* Цвет фона кнопки */
+color: #ccc;
+  border: none;
+  border-radius: 50%; /* Круглые углы */
+  /* Отступ вокруг иконки */
+  position: absolute;
+
+  right: 10px; /* Правый отступ для кнопки */
+
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+  z-index: 2; /* Поднять навигацию над контентом */
+}
+
+.slider-control.prev {
+
+  opacity: 0.7; /* Прозрачность по вашему желанию */
+  background-color: #007bff00; /* Цвет фона кнопки */
+color: #ccc;
+  border: none;
+  border-radius: 50%; /* Круглые углы */
+  /* Отступ вокруг иконки */
+  position: absolute;
+
+  left: 10px; /* Правый отступ для кнопки */
+
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+  z-index: 2; /* Поднять навигацию над контентом */
+}
+.slider-control.prev:hover {
+  background-color: #007bff95;
+  opacity: 1; /* Полная прозрачность при наведении */
+}
+.slider-control.next:hover {
+  background-color: #007bff95;
+  opacity: 1; /* Полная прозрачность при наведении */
+}
+
+/* Стили для контейнера содержимого слайдера */
+.slider-content {
+  display: flex;
+  align-items: center;
+  gap:0; /* Расстояние между кнопками фильтров */
+}
+
+.prev.visible{
+  display: none;
+}
+.next.visible{
+  display: none;
+}
+

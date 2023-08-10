@@ -19,19 +19,24 @@ export const useAuth = () => {
     localStorage.removeItem(storageName);
   }, []);
 
+  const clearVisited = useCallback(() => {
+    localStorage.removeItem(storageVisited);
+    setIsFirstVisit(true);
+  }, []);
+
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem(storageName));
     const visited = localStorage.getItem(storageVisited);
 
     if (visited) {
       setIsFirstVisit(false);
-    }else{
+    } else {
       setIsFirstVisit(true);
       setTimeout(() => {
         localStorage.setItem(storageVisited, 'true');
-      }, 4000);
+      }, 500);
     }
-    console.log(isFirstVisit);
+
     if (data && data.token) {
       login(data.token);
     }
@@ -39,5 +44,5 @@ export const useAuth = () => {
     setReady(true);
   }, [login]);
 
-  return { login, logout, token, ready, isFirstVisit };
+  return { login, logout, token, ready, isFirstVisit, clearVisited };
 };
